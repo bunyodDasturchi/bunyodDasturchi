@@ -1,231 +1,149 @@
-<h1 align="center">readme-interfaces</h1>
+[9/21/2026 7:25 PM] Р.Ш.: <h1 align="center">Hi 👋, I'm Bunyod Raxmatjonov</h1>
+
+<h3 align="center">
+  💻 Full-Stack Developer • 🚀 Content Creator • 🇺🇿 Uzbekistan
+</h3>
 
 <p align="center">
-  <em>Real devices, rendered as animated SVG, running on your GitHub profile.</em>
+  <a href="https://github.com/BunyodRaxmatjonovdev">
+    <img src="https://komarev.com/ghpvc/?username=BunyodRaxmatjonovdev&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+  </a>
+  <a href="https://github.com/BunyodRaxmatjonovdev?tab=followers">
+    <img src="https://img.shields.io/github/followers/BunyodRaxmatjonovdev?label=Followers&style=flat" alt="GitHub Followers" />
+  </a>
+  <a href="https://github.com/BunyodRaxmatjonovdev?tab=repositories">
+    <img src="https://img.shields.io/github/stars/BunyodRaxmatjonovdev?label=Stars&style=flat" alt="GitHub Stars" />
+  </a>
+</p>
+
+---
+
+## 👨‍💻 About Me
+
+I'm a passionate developer interested in building modern, useful and creative digital experiences.
+
+* 🔭 Currently working on Parasang
+* 🌱 Currently learning Content Creation & Advanced Development
+* 👯 Looking to collaborate on interesting projects and hackathons
+* 💬 Ask me about Full-Stack Development
+* 🎯 Interested in Web Development, Software & Content Creation
+* ⚡️ Fun fact: I love turning ideas into real projects
+* 📍 Based in Uzbekistan
+
+---
+
+## 🚀 Current Projects
+
+### 🎮 Parasang
+
+A project I'm currently working on and improving.
+
+🔗 Repository:
+https://github.com/BunyodRaxmatjonovdev/site
+
+### 🧪 Hackathon Projects
+
+I enjoy experimenting with new ideas and building projects during hackathons.
+
+🔗 Explore my repositories:
+https://github.com/BunyodRaxmatjonovdev?tab=repositories
+
+---
+
+## 🛠 Languages & Tools
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,python,java,cpp,php,mysql,mongodb,postgres,git,github,docker,linux,figma,tailwind,firebase,aws,azure,vscode&perline=8" />
+
+</p>
+
+---
+
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=BunyodRaxmatjonovdev&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&theme=tokyonight" alt="Bunyod's GitHub Stats" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BunyodRaxmatjonovdev&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top Languages" />
+</p>
+
+---
+
+## 🔥 GitHub Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=BunyodRaxmatjonovdev&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+
+---
+
+## 📈 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BunyodRaxmatjonovdev&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Activity Graph" />
+</p>
+
+---
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=BunyodRaxmatjonovdev&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" alt="GitHub Trophies" />
+</p>
+
+---
+
+## 📌 Featured Repositories
+
+<p align="center">
+
+<a href="https://github.com/BunyodRaxmatjonovdev/site">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=BunyodRaxmatjonovdev&repo=site&theme=tokyonight&hide_border=true" />
+</a>
+
+</p>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BunyodRaxmatjonovdev/BunyodRaxmatjonovdev/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+</p>
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+
+<a href="https://linkedin.com/in/bunyoddotai">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
+</a>
+
+<a href="mailto:workBunyodraxmatjonov@gmail.com">
+  <img src="https://skillicons.dev/icons?i=gmail" width="45" />
+</a>
+
+<a href="https://github.com/BunyodRaxmatjonovdev">
+  <img src="https://skillicons.dev/icons?i=github" width="45" />
+</a>
+
+</p>
+
+---
+
+## 💡 Developer Philosophy
+
+> Build. Learn. Improve. Repeat.
+
+I believe every project is an opportunity to learn something new, improve my skills and create something useful.
+
+---
+[9/21/2026 7:25 PM] Р.Ш.: <p align="center">
+  <b>Thanks for visiting my profile! 🚀</b>
 </p>
 
 <p align="center">
-  <img src="nintendo-ds/assets/ds-dark.svg" alt="A handheld console rendered in SVG. The top screen shows a clock, a sparkline and what the owner is working on; the bottom screen shows GitHub stats, top languages, a contribution graph and the latest commit." width="42%">
-  &nbsp;&nbsp;
-  <img src="tamagotchi/assets/tama-dark.svg" alt="A Tamagotchi rendered in SVG. A pixel pet walks on a dot-matrix LCD, and the screen pages through hunger, happiness, stats and a year of contributions." width="36%">
+  ⭐️ If you find my projects interesting, consider giving them a star!
 </p>
-
----
-
-A GitHub profile README is a strange canvas. You get Markdown, a strict HTML
-subset, and nothing else — no CSS, no JavaScript. Most profile dashboards work
-around this by embedding somebody's hosted image service.
-
-These don't. Each one is a **single self-contained SVG file**, generated by a
-script with no dependencies, committed straight into a profile repo, and
-redrawn every morning by a GitHub Action. Everything you see — the shell, the
-screens, the bitmap type, the motion — is geometry in one file.
-
-The point isn't the stats. Every one of these renders the same handful of
-numbers. The point is the *device*: taking a real object with real constraints
-and making GitHub data live inside its idiom.
-
----
-
-## The gallery
-
-| | Device | The idea | Weight | Docs |
-|---|---|---|---|---|
-| 🎮 | **[nintendo-ds](nintendo-ds)** | Two screens, so it can afford to be a dashboard. Live ticking clock, rotating "now playing", stats, languages, contribution graph, latest push. Five shell colours. | 51 KB | [SETUP.md](nintendo-ds/SETUP.md) |
-| 🥚 | **[tamagotchi](tamagotchi)** | One 80×40 dot-matrix LCD, so it *pages* instead. A pixel pet whose hunger is your commit streak, evolving through four life stages by contribution count. Nine screens, ~24s tour. Five shells. | 139 KB | [SETUP.md](tamagotchi/SETUP.md) |
-
-Both follow whichever theme the person looking at your profile has GitHub set
-to — light and dark are always rendered, and `<picture>` picks one. Your shell
-colour is yours; the screen is your visitor's.
-
----
-
-## How it works
-
-Three facts about the medium shape every decision in this repo. Read these
-before you build anything.
-
-**GitHub strips `<style>`, `<script>` and `class` out of every README.** The
-obvious answer — build the device in CSS — is off the table entirely.
-
-**An SVG loaded through an `<img>` is its own document, and SMIL animation
-inside it still runs.** That's the whole opening. `<animate>` works where CSS
-and JS cannot, so all motion is SMIL.
-
-**A browser rasterises that SVG as a single texture.** Anything that changes
-redraws the *entire* device. This is the constraint people get wrong, and it
-has two hard consequences — see the rules below.
-
-<details>
-<summary><b>Why the text is a hand-drawn bitmap font</b></summary>
-
-<br>
-
-Web fonts don't load inside a README-embedded SVG, and system fonts render
-differently on every machine. So `glyphs.mjs` defines a 5×7 pixel font by hand,
-as ASCII art, one 8-row entry per character (row 8 exists only for descenders).
-
-Both devices share the identical file. The DS compiles each glyph to a `<path>`
-in `<defs>` and stamps it with `<use>`; the Tamagotchi sets the glyph bitmaps
-directly into its dot matrix. Either way the type is genuinely pixelated and
-identical for everyone.
-
-</details>
-
----
-
-## Add your own
-
-New interfaces are welcome — that's what this repo is for. A pager, a Game Boy,
-a Winamp skin, a car dashboard, a departure board, a Nokia 3310, an oscilloscope.
-If it has a screen and a character, it works here.
-
-### The contract
-
-One folder per interface, self-contained, buildable on its own:
-
-```
-your-interface/
-├── content.json                       the only file a user edits routinely
-├── package.json                       zero dependencies; build + preview scripts
-├── scripts/
-│   ├── build.mjs                      entry point: data → SVG → assets/
-│   └── lib/
-│       ├── data.mjs                   GitHub → numbers          (copy as-is)
-│       ├── glyphs.mjs                 the 5×7 bitmap font       (copy as-is)
-│       ├── theme.mjs                  presets × light/dark
-│       └── your-device.mjs            your renderer
-├── .github/workflows/refresh-*.yml    redraws and commits daily
-├── assets/*-dark.svg                  generated output, committed
-├── assets/*-light.svg
-├── README.md                          the embed snippet
-├── SETUP.md                           the ten-minute install guide
-└── .gitignore                         .env, preview.html, node_modules/
-```
-
-The workflow file is a **template, not a live job**. GitHub only reads
-`.github/workflows/` at a repository *root*, so nothing in this collection runs
-on a schedule — the file exists to be copied into somebody's profile repo. Write
-it assuming it lands at that root.
-
-Your interface must:
-
-1. **Build with `node scripts/build.mjs` on Node 20+, with nothing installed.**
-   No dependencies. Not "few" — none.
-2. **Render both modes on every build**, into `assets/<name>-dark.svg` and
-   `assets/<name>-light.svg`.
-3. **Never hard-fail.** `data.mjs` degrades in three steps: GraphQL with a
-   token, then unauthenticated public events, then deterministic demo data. A
-   contributor with no network still gets a picture.
-4. **Ship one self-contained file per mode.** No `<script>`, no `class`, no
-   external references, no web fonts, no remote images.
-5. **Read correctly as a still.** Meters draw at their final value and the
-   first slot of every rotation carries a static `opacity="1"`, so a screenshot,
-   a converter, or a reader that ignores animation shows a finished device
-   rather than a blank one.
-6. **Carry a `<title>` and an `aria-label`** describing what the screens say.
-7. **Support `npm run preview`**, writing a gitignored `preview.html` with every
-   preset in both modes so a reviewer can see your work without a checkout.
-8. **Reject an unknown theme name** at build time and print the valid ones.
-
-### Two rules that keep it cheap to render
-
-Both were learned the hard way. An early version of the DS made laptop fans
-audible just by sitting on a profile page.
-
-**No filters.** `feDropShadow` and friends recompute across the whole bounding
-box on every redraw. Both devices fake their drop shadow with three offset
-copies of the silhouette. If you want a glow, stack shapes.
-
-**Animate discretely, never continuously.** A crossfade or a sweeping motion
-interpolates on every frame, pinning a core at 60fps forever. Every animation
-here uses `calcMode="discrete"`: the DS's second hand *ticks*, screens snap
-instead of fading, the pet walks in two frames. The result repaints about once
-a second instead of sixty times — and it reads as *more* of a real device, not
-less.
-
-A third, softer rule: **element count is the budget.** The DS collapses its
-371-cell contribution grid into one path per colour; the Tamagotchi collapses
-an entire screen into a single path of lit dots. Merge before you multiply.
-
-### What makes a good one
-
-The temptation is to draw a nice shell and put a stats dashboard inside it. Both
-devices here started that way and got better when they stopped.
-
-Let the device dictate the information architecture. The DS has two 420×315
-screens, so it can genuinely be a dashboard — and it earns a live clock, because
-a DS has a clock. The Tamagotchi has one tiny matrix and no room for a
-dashboard at all, so it pages through nine screens and lights an icon to say
-where you are, which is exactly what the real toy does. Its stats aren't
-stats — a lapsed commit streak leaves the pet hungry, sick, and standing next to
-a pile of neglect.
-
-Pick the device first. Then ask what *it* would do with your commit history.
-
-### Sending a pull request
-
-1. Fork, and branch.
-2. Build your interface in its own top-level folder. Don't touch the others.
-3. Run `npm run preview` and check every preset in both light and dark.
-4. Confirm the committed `assets/*.svg` match what your script currently
-   produces — the workflow will overwrite them otherwise and the diff will be
-   confusing.
-5. Add your row to the gallery table above.
-6. Open the PR with a screenshot of both modes.
-
-Copying `data.mjs` and `glyphs.mjs` verbatim is expected, not a smell. They are
-the shared substrate; duplicating them is what keeps each folder independently
-copyable into somebody's profile repo, which is the whole distribution model.
-
----
-
-## Working on it locally
-
-Each folder is its own project. There is nothing to install.
-
-```bash
-cd tamagotchi && npm run preview
-```
-
-That writes both SVGs plus a `preview.html` showing every shell in both modes.
-Open it in a browser.
-
-Unauthenticated, GitHub's API gives you public data only and the contribution
-graph comes out sparse. For the real thing locally, drop a token into a `.env`
-file in the interface folder:
-
-```
-GH_TOKEN=ghp_your_token_here
-```
-
-A classic token with the **`read:user`** scope is enough — that's the only way
-to reach the contribution calendar, and the automatic `GITHUB_TOKEN` in Actions
-can't read it. `.env` is gitignored. The build prints which source it used:
-`graphql` means the token worked, `events` means it fell back.
-
----
-
-## Putting one on your profile
-
-Each interface has its own `SETUP.md` — about ten minutes, no dependencies. The
-short version: copy the folder's contents into your profile repo, edit
-`content.json`, add a `GH_PAT` secret, give Actions write permission, and embed
-it with absolute `raw.githubusercontent.com` URLs.
-
-One thing that catches everybody: **use absolute URLs, not relative paths.**
-GitHub rewrites relative paths in `<img src>` but not reliably in
-`<source srcset>`, which is what the dark/light switch depends on.
-
----
-
-## Licence, and a note on the originals
-
-[MIT](LICENSE). Copy an interface into your own profile repo, change it, do what
-you like with it — keep the copyright notice. Contributions are accepted under
-the same terms.
-
-That covers the code. It does not cover the hardware these imitate. Nintendo and
-Bandai own their respective devices, names and marks; nothing here uses their
-logos or artwork, and every shell, sprite and glyph in this repo was drawn from
-scratch. Keep it that way in anything you add — draw your own pixels.
