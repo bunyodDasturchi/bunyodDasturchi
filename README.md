@@ -1,875 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Snake Game</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100vh;
-    background:
-        radial-gradient(circle at top, #172554, #020617 55%);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.game {
-    width: min(94vw, 650px);
-    text-align: center;
-}
-
-h1 {
-    font-size: 42px;
-    margin-bottom: 8px;
-    letter-spacing: 3px;
-}
-
-.subtitle {
-    color: #94a3b8;
-    margin-bottom: 18px;
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 12px;
-}
-
-.box {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #334155;
-    background: rgba(15, 23, 42, 0.8);
-    border-radius: 12px;
-}
-
-.box span {
-    display: block;
-    color: #94a3b8;
-    font-size: 13px;
-    margin-bottom: 4px;
-}
-
-.box strong {
-    font-size: 22px;
-}
-
-.game-area {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-
-    background: #020617;
-    border: 3px solid #334155;
-    border-radius: 18px;
-
-    overflow: hidden;
-    box-shadow:
-        0 0 40px rgba(34, 197, 94, 0.12),
-        inset 0 0 40px rgba(0, 0, 0, 0.5);
-}
-
-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(2, 6, 23, 0.82);
-    backdrop-filter: blur(5px);
+[9/21/2026 7:25 PM] Р.Ш.: <h1 align="center">Hi 👋, I'm Bunyod Raxmatjonov</h1>
 
-    opacity: 0;
-    pointer-events: none;
+<h3 align="center">
+  💻 Full-Stack Developer • 🚀 Content Creator • 🇺🇿 Uzbekistan
+</h3>
 
-    transition: 0.25s;
-}
+<p align="center">
+  <a href="https://github.com/BunyodRaxmatjonovdev">
+    <img src="https://komarev.com/ghpvc/?username=BunyodRaxmatjonovdev&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+  </a>
+  <a href="https://github.com/BunyodRaxmatjonovdev?tab=followers">
+    <img src="https://img.shields.io/github/followers/BunyodRaxmatjonovdev?label=Followers&style=flat" alt="GitHub Followers" />
+  </a>
+  <a href="https://github.com/BunyodRaxmatjonovdev?tab=repositories">
+    <img src="https://img.shields.io/github/stars/BunyodRaxmatjonovdev?label=Stars&style=flat" alt="GitHub Stars" />
+  </a>
+</p>
 
-.overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-}
+---
 
-.overlay h2 {
-    font-size: 38px;
-    margin-bottom: 8px;
-}
+## 👨‍💻 About Me
 
-.overlay p {
-    color: #94a3b8;
-    margin-bottom: 20px;
-}
+I'm a passionate developer interested in building modern, useful and creative digital experiences.
 
-button {
-    border: none;
-    cursor: pointer;
+* 🔭 Currently working on Parasang
+* 🌱 Currently learning Content Creation & Advanced Development
+* 👯 Looking to collaborate on interesting projects and hackathons
+* 💬 Ask me about Full-Stack Development
+* 🎯 Interested in Web Development, Software & Content Creation
+* ⚡️ Fun fact: I love turning ideas into real projects
+* 📍 Based in Uzbekistan
 
-    background: #22c55e;
-    color: #052e16;
+---
 
-    font-size: 17px;
-    font-weight: bold;
+## 🚀 Current Projects
 
-    padding: 12px 25px;
-    border-radius: 10px;
+### 🎮 Parasang
 
-    transition: 0.15s;
-}
+A project I'm currently working on and improving.
 
-button:hover {
-    transform: translateY(-2px);
-    background: #4ade80;
-}
+🔗 Repository:
+https://github.com/BunyodRaxmatjonovdev/site
 
-button:active {
-    transform: scale(0.95);
-}
+### 🧪 Hackathon Projects
 
-.controls {
-    margin-top: 18px;
+I enjoy experimenting with new ideas and building projects during hackathons.
 
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    justify-content: center;
-    gap: 7px;
-}
+🔗 Explore my repositories:
+https://github.com/BunyodRaxmatjonovdev?tab=repositories
 
-.controls button {
-    width: 60px;
-    height: 50px;
-    padding: 0;
+---
 
-    background: #1e293b;
-    color: white;
+## 🛠 Languages & Tools
 
-    border: 1px solid #475569;
-}
+<p align="center">
 
-.controls button:hover {
-    background: #334155;
-}
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,python,java,cpp,php,mysql,mongodb,postgres,git,github,docker,linux,figma,tailwind,firebase,aws,azure,vscode&perline=8" />
 
-.controls .empty {
-    visibility: hidden;
-}
+</p>
 
-.help {
-    margin-top: 14px;
-    color: #64748b;
-    font-size: 13px;
-}
+---
 
-@media (max-width: 500px) {
+## 📊 GitHub Analytics
 
-    h1 {
-        font-size: 32px;
-    }
+<p align="center">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=BunyodRaxmatjonovdev&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&theme=tokyonight" alt="Bunyod's GitHub Stats" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BunyodRaxmatjonovdev&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top Languages" />
+</p>
 
-    .controls {
-        grid-template-columns: repeat(3, 55px);
-    }
+---
 
-    .controls button {
-        width: 55px;
-        height: 46px;
-    }
-}
-</style>
-</head>
+## 🔥 GitHub Streak
 
-<body>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=BunyodRaxmatjonovdev&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
 
-<div class="game">
+---
 
-    <h1>🐍 SNAKE</h1>
+## 📈 GitHub Activity
 
-    <p class="subtitle">
-        Classic Snake Game
-    </p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BunyodRaxmatjonovdev&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Activity Graph" />
+</p>
 
-    <div class="info">
+---
 
-        <div class="box">
-            <span>SCORE</span>
-            <strong id="score">0</strong>
-        </div>
+## 🏆 GitHub Trophies
 
-        <div class="box">
-            <span>BEST</span>
-            <strong id="best">0</strong>
-        </div>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=BunyodRaxmatjonovdev&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" alt="GitHub Trophies" />
+</p>
 
-        <div class="box">
-            <span>SPEED</span>
-            <strong id="speed">1x</strong>
-        </div>
+---
 
-    </div>
+## 📌 Featured Repositories
 
-    <div class="game-area">
+<p align="center">
 
-        <canvas id="gameCanvas"></canvas>
+<a href="https://github.com/BunyodRaxmatjonovdev/site">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=BunyodRaxmatjonovdev&repo=site&theme=tokyonight&hide_border=true" />
+</a>
 
-        <div class="overlay" id="overlay">
+</p>
 
-            <h2>GAME OVER</h2>
+---
 
-            <p>
-                Your score:
-                <strong id="finalScore">0</strong>
-            </p>
+## 🐍 Contribution Snake
 
-            <button id="restart">
-                🔄 PLAY AGAIN
-            </button>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BunyodRaxmatjonovdev/BunyodRaxmatjonovdev/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+</p>
 
-        </div>
+---
 
-    </div>
+## 🌐 Connect With Me
 
-    <div class="controls">
+<p align="center">
 
-        <button class="empty"></button>
+<a href="https://linkedin.com/in/bunyoddotai">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
+</a>
 
-        <button data-direction="up">▲</button>
+<a href="mailto:workBunyodraxmatjonov@gmail.com">
+  <img src="https://skillicons.dev/icons?i=gmail" width="45" />
+</a>
 
-        <button class="empty"></button>
+<a href="https://github.com/BunyodRaxmatjonovdev">
+  <img src="https://skillicons.dev/icons?i=github" width="45" />
+</a>
 
-        <button data-direction="left">◀</button>
+</p>
 
-        <button data-direction="down">▼</button>
+---
 
-        <button data-direction="right">▶</button>
+## 💡 Developer Philosophy
 
-    </div>
+> Build. Learn. Improve. Repeat.
 
-    <p class="help">
-        Use WASD or Arrow Keys to control the snake
-    </p>
+I believe every project is an opportunity to learn something new, improve my skills and create something useful.
 
-</div>
+---
+[9/21/2026 7:25 PM] Р.Ш.: <p align="center">
+  <b>Thanks for visiting my profile! 🚀</b>
+</p>
 
-<script>
-
-const canvas = document.getElementById("gameCanvas");
-const ctx = canvas.getContext("2d");
-
-const scoreElement = document.getElementById("score");
-const bestElement = document.getElementById("best");
-const speedElement = document.getElementById("speed");
-
-const overlay = document.getElementById("overlay");
-const finalScore = document.getElementById("finalScore");
-const restartButton = document.getElementById("restart");
-
-const GRID = 25;
-
-let snake;
-let food;
-
-let direction;
-let nextDirection;
-
-let score = 0;
-let best = Number(localStorage.getItem("snakeBest")) || 0;
-
-let gameRunning = false;
-let gameOver = false;
-
-let lastTime = 0;
-let accumulator = 0;
-
-let speed = 130;
-
-bestElement.textContent = best;
-
-
-/* =========================
-   CANVAS
-========================= */
-
-function resizeCanvas() {
-
-    const size = canvas.clientWidth;
-
-    const dpr = window.devicePixelRatio || 1;
-
-    canvas.width = size * dpr;
-    canvas.height = size * dpr;
-
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-}
-
-window.addEventListener("resize", resizeCanvas);
-
-
-/* =========================
-   START GAME
-========================= */
-
-function startGame() {
-
-    snake = [
-        { x: 12, y: 12 },
-        { x: 11, y: 12 },
-        { x: 10, y: 12 },
-        { x: 9, y: 12 }
-    ];
-
-    direction = {
-        x: 1,
-        y: 0
-    };
-
-    nextDirection = {
-        x: 1,
-        y: 0
-    };
-
-    score = 0;
-
-    speed = 130;
-
-    gameOver = false;
-    gameRunning = true;
-
-    accumulator = 0;
-
-    scoreElement.textContent = score;
-    speedElement.textContent = "1x";
-
-    overlay.classList.remove("show");
-
-    createFood();
-}
-
-
-/* =========================
-   FOOD
-========================= */
-
-function createFood() {
-
-    let valid = false;
-
-    while (!valid) {
-
-        food = {
-            x: Math.floor(Math.random() * GRID),
-            y: Math.floor(Math.random() * GRID)
-        };
-
-        valid = !snake.some(part =>
-            part.x === food.x &&
-            part.y === food.y
-        );
-    }
-}
-
-
-/* =========================
-   UPDATE
-========================= */
-
-function update() {
-
-    direction = nextDirection;
-
-    const head = {
-        x: snake[0].x + direction.x,
-        y: snake[0].y + direction.y
-    };
-
-
-    /* WALL COLLISION */
-
-    if (
-        head.x < 0 ||
-        head.x >= GRID ||
-        head.y < 0 ||
-        head.y >= GRID
-    ) {
-
-        endGame();
-        return;
-    }
-
-
-    /* SELF COLLISION */
-
-    const hitSelf = snake.some(part =>
-        part.x === head.x &&
-        part.y === head.y
-    );
-
-    if (hitSelf) {
-
-        endGame();
-        return;
-    }
-
-
-    snake.unshift(head);
-
-
-    /* FOOD */
-
-    if (
-        head.x === food.x &&
-        head.y === food.y
-    ) {
-
-        score++;
-
-        scoreElement.textContent = score;
-
-        if (score > best) {
-
-            best = score;
-
-            localStorage.setItem(
-                "snakeBest",
-                best
-            );
-
-            bestElement.textContent = best;
-        }
-
-
-        /* SPEED INCREASE */
-
-        if (score % 5 === 0) {
-
-            speed = Math.max(
-                55,
-                speed - 10
-            );
-
-            const multiplier =
-                (130 / speed).toFixed(1);
-
-            speedElement.textContent =
-                multiplier + "x";
-        }
-
-        createFood();
-
-    } else {
-
-        snake.pop();
-    }
-}
-
-
-/* =========================
-   GAME OVER
-========================= */
-
-function endGame() {
-
-    gameRunning = false;
-    gameOver = true;
-
-    finalScore.textContent = score;
-
-    overlay.classList.add("show");
-}
-
-
-/* =========================
-   DRAW
-========================= */
-
-function draw() {
-
-    const size = canvas.clientWidth;
-
-    const cell = size / GRID;
-
-
-    /* BACKGROUND */
-
-    ctx.fillStyle = "#020617";
-
-    ctx.fillRect(
-        0,
-        0,
-        size,
-        size
-    );
-
-
-    /* GRID */
-
-    ctx.strokeStyle = "rgba(51,65,85,0.25)";
-    ctx.lineWidth = 1;
-
-    for (let i = 0; i <= GRID; i++) {
-
-        const p = i * cell;
-
-        ctx.beginPath();
-
-        ctx.moveTo(p, 0);
-        ctx.lineTo(p, size);
-
-        ctx.stroke();
-
-        ctx.beginPath();
-
-        ctx.moveTo(0, p);
-        ctx.lineTo(size, p);
-
-        ctx.stroke();
-    }
-
-
-    /* FOOD */
-
-    const fx =
-        food.x * cell + cell / 2;
-
-    const fy =
-        food.y * cell + cell / 2;
-
-    ctx.beginPath();
-
-    ctx.arc(
-        fx,
-        fy,
-        cell * 0.32,
-        0,
-        Math.PI * 2
-    );
-
-    ctx.fillStyle = "#ef4444";
-
-    ctx.shadowColor = "#ef4444";
-    ctx.shadowBlur = 15;
-
-    ctx.fill();
-
-    ctx.shadowBlur = 0;
-
-
-    /* SNAKE */
-
-    snake.forEach((part, index) => {
-
-        const padding = 2;
-
-        const x =
-            part.x * cell + padding;
-
-        const y =
-            part.y * cell + padding;
-
-        const size2 =
-            cell - padding * 2;
-
-        ctx.fillStyle =
-            index === 0
-                ? "#4ade80"
-                : "#22c55e";
-
-        ctx.beginPath();
-
-        ctx.roundRect(
-            x,
-            y,
-            size2,
-            size2,
-            5
-        );
-
-        ctx.fill();
-
-
-        /* EYES */
-
-        if (index === 0) {
-
-            ctx.fillStyle = "#052e16";
-
-            const eyeSize = cell * 0.12;
-
-            let eye1X;
-            let eye1Y;
-
-            let eye2X;
-            let eye2Y;
-
-
-            if (direction.x === 1) {
-
-                eye1X = x + cell * 0.68;
-                eye2X = x + cell * 0.68;
-
-                eye1Y = y + cell * 0.30;
-                eye2Y = y + cell * 0.70;
-
-            } else if (direction.x === -1) {
-
-                eye1X = x + cell * 0.32;
-                eye2X = x + cell * 0.32;
-
-                eye1Y = y + cell * 0.30;
-                eye2Y = y + cell * 0.70;
-
-            } else if (direction.y === -1) {
-
-                eye1X = x + cell * 0.30;
-                eye2X = x + cell * 0.70;
-
-                eye1Y = y + cell * 0.32;
-                eye2Y = y + cell * 0.32;
-
-            } else {
-
-                eye1X = x + cell * 0.30;
-                eye2X = x + cell * 0.70;
-
-                eye1Y = y + cell * 0.68;
-                eye2Y = y + cell * 0.68;
-            }
-
-
-            ctx.beginPath();
-
-            ctx.arc(
-                eye1X,
-                eye1Y,
-                eyeSize,
-                0,
-                Math.PI * 2
-            );
-
-            ctx.fill();
-
-
-            ctx.beginPath();
-
-            ctx.arc(
-                eye2X,
-                eye2Y,
-                eyeSize,
-                0,
-                Math.PI * 2
-            );
-
-            ctx.fill();
-        }
-
-    });
-}
-
-
-/* =========================
-   GAME LOOP
-========================= */
-
-function gameLoop(time) {
-
-    if (!lastTime) {
-        lastTime = time;
-    }
-
-    const delta =
-        time - lastTime;
-
-    lastTime = time;
-
-    if (gameRunning) {
-
-        accumulator += delta;
-
-        if (accumulator >= speed) {
-
-            update();
-
-            accumulator = 0;
-        }
-    }
-
-    draw();
-
-    requestAnimationFrame(gameLoop);
-}
-
-
-/* =========================
-   CHANGE DIRECTION
-========================= */
-
-function changeDirection(dir) {
-
-    if (!gameRunning) {
-        return;
-    }
-
-    if (dir === "up") {
-
-        if (direction.y !== 1) {
-
-            nextDirection = {
-                x: 0,
-                y: -1
-            };
-        }
-
-    }
-
-    if (dir === "down") {
-
-        if (direction.y !== -1) {
-
-            nextDirection = {
-                x: 0,
-                y: 1
-            };
-        }
-
-    }
-
-    if (dir === "left") {
-
-        if (direction.x !== 1) {
-
-            nextDirection = {
-                x: -1,
-                y: 0
-            };
-        }
-
-    }
-
-    if (dir === "right") {
-
-        if (direction.x !== -1) {
-
-            nextDirection = {
-                x: 1,
-                y: 0
-            };
-        }
-    }
-}
-
-
-/* =========================
-   KEYBOARD
-========================= */
-
-document.addEventListener("keydown", event => {
-
-    const key = event.key.toLowerCase();
-
-    if (
-        key === "arrowup" ||
-        key === "w"
-    ) {
-
-        event.preventDefault();
-
-        changeDirection("up");
-
-    } else if (
-        key === "arrowdown" ||
-        key === "s"
-    ) {
-
-        event.preventDefault();
-
-        changeDirection("down");
-
-    } else if (
-        key === "arrowleft" ||
-        key === "a"
-    ) {
-
-        event.preventDefault();
-
-        changeDirection("left");
-
-    } else if (
-        key === "arrowright" ||
-        key === "d"
-    ) {
-
-        event.preventDefault();
-
-        changeDirection("right");
-    }
-
-});
-
-
-/* =========================
-   MOBILE BUTTONS
-========================= */
-
-document.querySelectorAll(
-    "[data-direction]"
-).forEach(button => {
-
-    button.addEventListener(
-        "click",
-        () => {
-
-            changeDirection(
-                button.dataset.direction
-            );
-
-        }
-    );
-
-});
-
-
-/* =========================
-   RESTART
-========================= */
-
-restartButton.addEventListener(
-    "click",
-    startGame
-);
-
-
-/* =========================
-   START
-========================= */
-
-resizeCanvas();
-
-startGame();
-
-requestAnimationFrame(gameLoop);
-
-</script>
-
-</body>
-</html>
+<p align="center">
+  ⭐️ If you find my projects interesting, consider giving them a star!
+</p>
